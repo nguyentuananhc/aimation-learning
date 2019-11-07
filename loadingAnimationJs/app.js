@@ -39,6 +39,20 @@ function moveThing() {
 
 moveThing();
 
+const dot = document.querySelector('#dot') 
+var currentDeg = 0
+
+function turnThing() {
+    currentDeg += 1
+    dot.style.transform =  "rotate("+ currentDeg +"deg)";
+    if (Math.abs(currentDeg) >= 360) {
+        currentDeg = 0
+    }
+    requestAnimationFrame(turnThing)
+}
+
+turnThing();
+
 //pos
 // optimized for animation and runs as fast as your diplay allow (nearly 60fps)
 // support all browser
