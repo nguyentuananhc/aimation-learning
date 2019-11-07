@@ -38,3 +38,8 @@ function moveThing() {
 }
 
 moveThing();
+
+//pos
+// optimized for animation and runs as fast as your diplay allow (nearly 60fps)
+// support all browser
+// some other pos
